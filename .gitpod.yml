@@ -1,2 +1,8 @@
+# Commands to start on workspace startup
+tasks:
+  - init: cd front && npm install
+    command: cd front && npm run serve
+# Ports to expose on workspace startup
 ports:
   - port: 8080
+    onOpen: open-preview
